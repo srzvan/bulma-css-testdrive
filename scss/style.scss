@@ -1,0 +1,11 @@
+// utils
+@import 'vendor/normalize';
+@import 'mixins/mixins';
+
+// components
+@import 'components/header';
+
+html,
+body {
+  height: 100%;
+}

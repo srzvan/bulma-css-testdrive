@@ -1,0 +1,45 @@
+@mixin link-border-hover-animation {
+  @keyframes link-border-hover-animation {
+    0% {
+      width: 0;
+      visibility: hidden;
+    }
+
+    2% {
+      visibility: visible;
+    }
+
+    50% {
+      width: 40%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@mixin link-border-mouse-leave-animation {
+  @keyframes link-border-mouse-leave-animation {
+    0% {
+      width: 100%;
+    }
+
+    25% {
+      width: 75%;
+    }
+
+    50% {
+      width: 50%;
+    }
+
+    75% {
+      width: 25%;
+    }
+
+    100% {
+      width: 0;
+      visibility: hidden;
+    }
+  }
+}
