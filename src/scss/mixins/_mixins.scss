@@ -2,19 +2,15 @@
   @keyframes link-border-hover-animation {
     0% {
       width: 0;
-      visibility: hidden;
     }
 
     2% {
-      visibility: visible;
-    }
-
-    50% {
-      width: 40%;
+      opacity: 1;
     }
 
     100% {
       width: 100%;
+      opacity: 1;
     }
   }
 }
@@ -22,24 +18,17 @@
 @mixin link-border-mouse-leave-animation {
   @keyframes link-border-mouse-leave-animation {
     0% {
+      opacity: 0;
       width: 100%;
     }
 
-    25% {
-      width: 75%;
-    }
-
-    50% {
-      width: 50%;
-    }
-
-    75% {
-      width: 25%;
+    2% {
+      opacity: 1;
     }
 
     100% {
       width: 0;
-      visibility: hidden;
+      opacity: 0;
     }
   }
 }

@@ -1,29 +1,22 @@
 .header {
-  width: 100%;
+  position: relative;
 
-  .nav.nav--main {
-    padding: 1.75rem 2rem;
+  &:before {
+    content: "Photo by Shirly Niv Marton on Unsplash";
+    display: block;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: hsla(0, 0%, 100%, 0.6);
+    background-image: url(../../../dist/assets/img/hero-background-shirly-niv-marton-377770-unsplash.jpg);
+    background-size: cover;
+  }
 
-    .link {
-      position: relative;
-      border-bottom: 1px solid blueviolet;
-
-      &:hover:before {
-        animation: link-border-hover-animation .2s ease-in forwards;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        height: 2px;
-        background-color: blueviolet;
-
-        animation: link-border-mouse-leave-animation .2s ease-in forwards;
-      }
-    }
-
-    @include link-border-hover-animation;
-    @include link-border-mouse-leave-animation;
+  .hero-body {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }

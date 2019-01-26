@@ -1,11 +1,16 @@
 // utils
-@import 'vendor/normalize';
-@import 'mixins/mixins';
+@import "vendor/normalize";
+@import "mixins/mixins";
 
 // components
-@import 'components/header';
+@import "components/header";
+@import "components/main";
 
 html,
 body {
   height: 100%;
+}
+
+body {
+  position: relative;
 }
