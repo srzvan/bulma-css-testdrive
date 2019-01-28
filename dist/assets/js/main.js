@@ -1,12 +1,12 @@
 const nextBtn = document.getElementById("js-next-btn");
-const backBtn = document.getElementById("js-back-btn")
-const mainSection = document.querySelector("main.main");
+const backBtn = document.getElementById("js-back-btn");
 
-nextBtn.addEventListener("click", () => {
-  mainSection.classList.add("in-view");
-});
+// nextBtn.addEventListener("click", () => {
+//   const body = document.querySelector("body");
+//   body.style.transform = "translateY(-100%)";
+// });
 
-backBtn.addEventListener("click", () => {
-  mainSection.classList.remove("in-view");
-});
-
+// backBtn.addEventListener("click", () => {
+//   const body = document.querySelector("body");
+//   body.style.transform = "translateY(0)";
+// });

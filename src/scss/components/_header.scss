@@ -1,35 +1,24 @@
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
 
-  &:before {
-    content: "";
-    display: block;
-    padding: 1em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: hsla(0, 0%, 100%, 0.6);
-    background-image: url(../../../dist/assets/img/hero-background-shirly-niv-marton-377770-unsplash.jpg);
-    background-size: cover;
-  }
+  .main-nav {
+    background-color: transparent;
 
-  .hero-body {
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+    .nav-brand .logo {
+      width: 150px;
+      height: auto;
+    }
 
-  .photo-copyright {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    opacity: .6;
-    color: hsl(0, 0%, 100%);
-    text-decoration: underline;
+    .navbar-menu .navbar-item {
+      color: inherit;
 
-    &:hover {
-      color: hsl(171, 100%, 41%);
+      &:hover {
+        color: hsl(171, 100%, 41%);
+      }
     }
   }
 }
